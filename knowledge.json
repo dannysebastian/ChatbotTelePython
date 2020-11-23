@@ -1,0 +1,350 @@
+{
+	"dictionary":{
+		"nama_dekan_fti": "Pak Dito",
+		"nama_dekan_fti_lengkap": "Pak Restyandito",
+		"nama_kaprodi_inf": "Bu Gloria",
+		"nama_kaprodi_inf_lengkap": "Bu Gloria Virginia",
+		"nama_kaprodi_si": "Pak Siang",
+		"nama_kaprodi_si_lengkap": "Pak Jong Jek Siang",
+		"nama_wd2_fti": "Bu Widi",
+		"nama_wd2_fti_lengkap": "Bu Widi Hapsari",
+		"nama_wd3_fti": "Pak Willy",
+		"nama_wd3_fti_lengkap": "Pak Willy Sudiarto",
+		"nama_admin_fti": "Pak Ronny",
+		"nama_admin_fti_lengkap": "Pak Ronny Kuncoro",
+		"nama_koor_skripsi_inf": "Pak Anton",
+		"nama_koor_skripsi_inf_lengkap": "Pak Antonius Rachmat",
+		"nama_koor_kp_inf": "Pak Kuncoro",
+		"nama_koor_kp_inf_lengkap": "Pak Laurentius Kuncoro",
+		"nama_admin_fti": "Andhika",
+		"nomor_biro_keuangan": "081247743904",
+		"waktu_ambilsertifikatedas": "17 Agustus 1945",
+		"waktu_mulaikuliah": "14 September 2020",
+		"waktu_edas" : "1 Januari 1970",
+		"waktu_mti" : "1 Januari 1970",
+		"email_puspindikaubahdataemail" : "dave@staff.ukdw.ac.id"
+	},
+	"knowledge": [
+		{
+			"class": "q_unknown",
+			"patterns": [],
+			"responses": [],
+			"required": []
+		},
+		{
+			"class": "q_selamatpagi",
+			"patterns": [
+				"selamat pagi",
+				"slmt pg",
+				"pagi",
+				"pg"
+			],
+			"responses": [
+				"Selamat pagi"
+			],
+			"required": []
+		},
+		{
+			"class": "q_selamatsiang",
+			"patterns": [
+				"selamat siang",
+				"slmt siang",
+				"siang"
+			],
+			"responses": [
+				"Selamat siang"
+			],
+			"required": []
+		},
+		{
+			"class": "q_selamatmalam",
+			"patterns": [
+				"selamat malam",
+				"slmt mlm",
+				"malam",
+				"mlm"
+			],
+			"responses": [
+				"Selamat malam"
+			],
+			"required": []
+		},
+		{
+			"class": "q_konfirmasikontak",
+			"patterns": [
+				"Apa betul ini dengan FTI UKDW?",
+				"Apa betul ini nomor Fakultas Teknologi Informasi UKDW?"
+			],
+			"responses": [
+				"Iya betul, ada yang bisa kami bantu?"
+			],
+			"required": []
+		},
+		{
+			"class": "q_terimakasih",
+			"patterns": [
+				"terima kasih", 
+				"trims", 
+				"thanks", 
+				"thx",
+				"tks",
+				"makasih"
+			],
+			"responses": [
+				"Sama-sama",
+				"Terima kasih kembali"
+			],
+			"required": []
+		},
+		{
+			"class": "q_beasiswa",
+			"patterns": [
+				"mau tanya tentang beasiswa?", 
+				"apa ada info beasiswa?", 
+				"kalau daftar beasiswa ke siapa?",
+				"Apa saja beasiswa yang ada untuk mahasiswa semester 7?",
+				"Kapan batas terakhir pengumpulan persyaratan beasiswa AA Rachmat?",
+				"Apa saja persyaratan untuk mengambil beasiswa AA Rachmat?",
+				"Boleh saya minta form pendaftaran beasiswa AA Rachmat?",
+				"Pak, step apply beasiswanya gmn pak?"
+			],
+			"responses": [
+				"Langsung kontak ke #nama_wd3_fti saja", 
+				"Coba tanya ke #nama_wd3_fti"
+			],
+			"required": []
+		},
+		{
+			"class": "q_cekalregis",
+			"patterns": [
+				"saya kena cekal",
+				"ngurus bebas cekal ke siapa ya?",
+				"cekal", 
+				"registrasi", 
+				"blok", 
+				"block"],
+			"responses": [
+				"Langsung ketemu #nama_kaprodi_inf saja", 
+				"Coba ke #nama_kaprodi_inf"
+			],
+			"required": []
+		},
+		{
+			"class": "q_pembayaran",
+			"patterns": [
+				"klu kmi krm uang kuliah ank kmi lewt mn ya",
+				"bayar uang kuliah ke mana ya?"
+			],
+			"responses": [
+				"Bisa langsung kontak ke Biro Keuangan melalui nomor #nomor_biro_keuangan"
+			],
+			"required": []
+		},
+		{
+			"class": "q_pindahjurusan",
+			"patterns": [
+				"saya mau tanyak kalau pindah jurusan bisa tidak yah kalo semester sekarang"
+			],
+			"responses": [
+				"Pindah jurusan bisa dilakukan di tahun ajaran baru (semester gasal)"
+			],
+			"required": []
+		},
+		{
+			"class": "q_terlambatregistrasi",
+			"patterns": [
+				"saya belum melakukan registrasi",
+				"saya terlambat registrasi"
+			],
+			"responses": [
+				"Buat surat pernyataan, lalu dikumpulkan ke saya (#nama_admin_fti) di Fakultas"
+			],
+			"required": ["nim"]
+		},
+		{
+			"class": "q_kelaspenuh",
+			"patterns": [
+				"saya masih bth 2 kelas lg, tp rata-rata penuh semua...kira-kira hrs hadap ke siapa ya?"
+			],
+			"responses": [
+				"Langsung menemui #nama_kaprodi_inf saja"
+			],
+			"required": ["nim"]
+		},
+		{
+			"class": "q_dosenhadir",
+			"patterns": [
+				"pak benny ada di fakultas tidak ya?",
+				"Pak, Pak Willy dimana ya pak ?",
+				"Pak Anton di mana ya pak ?"
+			],
+			"responses": [
+				"Coba kontak langsung ke beliau saja"
+			],
+			"required": []
+		},
+		{
+			"class": "q_nilaibelumkeluar",
+			"patterns": [
+				"Nilai saya kok belum keluar ya?"
+			],
+			"responses": [
+				"Coba kontak langsung ke dosen pengampu mata kuliahnya"
+			],
+			"required": []
+		},
+		{
+			"class": "q_syaratwisuda",
+			"patterns": [
+				"Apa saja persyaratan yang dibutuhkan untuk wisuda?"
+			],
+			"responses": [
+				"Coba kontak langsung ke dosen pengampu mata kuliahnya"
+			],
+			"required": []
+		},
+		{
+			"class": "q_syaratyudisium",
+			"patterns": [
+				"Apa saja syarat yang dibutuhkan untuk yudisium?"
+			],
+			"responses": [
+				"tidaktahu"
+			],
+			"required": []
+		},
+		{
+			"class": "q_pembatalanmatakuliahyudisium",
+			"patterns": [
+				"Jika saya belum mengajukan pembatalan mata kuliah saat yudisium, apakah masih bisa dilakukan pembatalan?"
+			],
+			"responses": [
+				"Masih bisa selama rapat sidang yudisium belum dilaksanakan. Jika sudah lewat maka tidak bisa."
+			],
+			"required": []
+		},
+		{
+			"class": "q_mintakalenderakademik",
+			"patterns": [
+				"Boleh saya minta kalender akademik?",
+				"Ambil kalender akademik di mana ya?"
+			],
+			"responses": [
+				"Bisa langsung minta ke Biro 1"
+			],
+			"required": []
+		},
+		{
+			"class": "q_prosedurseminar",
+			"patterns": [
+				"Apa saja tahapan untuk mendaftarkan seminar?"
+			],
+			"responses": [
+				"Tidak ada tahapan khusus, tinggal ambil mata kuliah Seminar saat registrasi"
+			],
+			"required": []
+		},
+		{
+			"class": "q_bisaambilsertifikatedas",
+			"patterns": [
+				"Apakah sertifikat edas sudah bisa diambil?"
+			],
+			"responses": [
+				"Sertifikat bisa diambil mulai tanggal #waktu_ambilsertifikatedas"
+			],
+			"required": []
+		},
+		{
+			"class": "q_mintaformchecklist",
+			"patterns": [
+				"Boleh saya minta form checklist mata kuliah?"
+			],
+			"responses": [
+				"Langsung minta ke #nama_admin_fti",
+				"Bisa minta di #nama_admin_fti"
+			],
+			"required": []
+		},
+		{
+			"class": "q_jadwalsemesterdepan",
+			"patterns": [
+				"Pak jadwal kuliah semester depan sudah ada pak?"
+			],
+			"responses": [
+				"Coba langsung menghubungi #nama_kaprodi_inf saja"
+			],
+			"required": []
+		},
+		{
+			"class": "q_tanyaaktifskripsi",
+			"patterns": [
+				"Saya sudah membayar spp semester ini termasuk biaya skripsi, kemudian untuk mengaktifkan status skripsi bagaimananya pak?"
+			],
+			"responses": [
+				"Nanti akan diaktifkan secara otomatis oleh sistem"
+			],
+			"required": []
+		},
+		{
+			"class": "q_cekpoinkeaktifan",
+			"patterns": [
+				"Berapa poin keaktifan saya sekarang?"
+			],
+			"responses": [
+				"Bisa dicek di sac.ukdw.ac.id"
+			],
+			"required": []
+		},
+		{
+			"class": "q_caramenambahpoinkeaktifan",
+			"patterns": [
+				"Bagaimana cara menambahkan poin keaktifan saya?",
+				"Malam Pak/Bu, ingin bertanya mengenai poin keaktifan. Poin keaktifan saya belum cukup untuk yudisium, bagaimana ya?"
+			],
+			"responses": [
+				"Bisa ditambah dengan cara ikut organisasi, ikut seminar, atau memenangkan lomba"
+			],
+			"required": []
+		},
+		{
+			"class": "q_waktumulaikuliah",
+			"patterns": [
+				"Pak mulai kuliah offline nya kapan ya pak?"
+			],
+			"responses": [
+				"Kuliah perdana dimulai tanggal #waktu_mulaikuliah"
+			],
+			"required": []
+		},
+		{
+			"class": "q_ubahdataemail",
+			"patterns": [
+				"Admin, adakah cara utk mengubah email? Dikarenakan nama domain yg shrsnya menggunakan nama saya salah"
+			],
+			"responses": [
+				"Langsung kontak ke Puspindika saja melalui #email_puspindikaubahdataemail"
+			],
+			"required": []
+		},
+		{
+			"class": "q_jadwaledasmti",
+			"patterns": [
+				"Kapan jadwal EDAS atau MTI?"
+			],
+			"responses": [
+				"Jadwal EDAS berikutnya tanggal #waktu_edas, jadwal MTI berikutnya tanggal #waktu_mti"
+			],
+			"required": []
+		},
+		{
+			"class": "q_pengumumanterbaru",
+			"patterns": [
+				"Apa pengumuman terbaru di FTI?"
+			],
+			"responses": [
+				"Pengumuman apa yang ingin dicari?"
+			],
+			"required": []
+		}
+	]
+}
